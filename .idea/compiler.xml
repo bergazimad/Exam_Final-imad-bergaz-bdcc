@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Inventory-Command-Service" />
+        <module name="Eureka_service" />
+        <module name="Gateway_servvice" />
+        <module name="Inventory-Query-Service" />
+      </profile>
+      <profile name="Annotation profile for Customer-Service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+        </processorPath>
+        <module name="common-api" />
+        <module name="Inventory-Service" />
+        <module name="Customer-Query-Service" />
+        <module name="Customer-Command-Service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-api" target="17" />
+      <module name="Customer-Command-Service" target="17" />
+      <module name="Customer-Query-Service" target="17" />
+      <module name="Customer-Service" target="17" />
+      <module name="Eureka_service" target="17" />
+      <module name="Exam_Final" target="17" />
+      <module name="Gateway_servvice" target="17" />
+      <module name="Inventory-Command-Service" target="17" />
+      <module name="Inventory-Query-Service" target="17" />
+      <module name="Inventory-Service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Customer-Command-Service" options="-parameters" />
+      <module name="Customer-Query-Service" options="-parameters" />
+      <module name="Customer-Service" options="" />
+      <module name="Eureka_service" options="-parameters" />
+      <module name="Exam_Final-imadbergaz" options="" />
+      <module name="Gateway_servvice" options="-parameters" />
+      <module name="Inventory-Command-Service" options="-parameters" />
+      <module name="Inventory-Query-Service" options="-parameters" />
+      <module name="Inventory-Service" options="-parameters" />
+      <module name="common-api" options="-parameters" />
+    </option>
+  </component>
+</project>
